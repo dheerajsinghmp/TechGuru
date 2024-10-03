@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Web Quince</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-yellow-400 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-bold text-blue-800">
+                <a href="index.html">Web Quince</a>
+            </div>
+
+            <nav class="hidden md:flex space-x-6 text-blue-800 font-medium">
+                <a href="index.html" class="hover:text-gray-800">Digital Marketing</a>
+                <div class="relative group">
+                    <a href="development.html" class="hover:text-gray-800">Development</a>
+                    <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg z-10">
+                        <a href="web-development.html" class="block px-4 py-2 hover:bg-gray-200">Web Development</a>
+                        <a href="mobile-development.html" class="block px-4 py-2 hover:bg-gray-200">Mobile
+                            Development</a>
+                        <a href="api-development.html" class="block px-4 py-2 hover:bg-gray-200">API Development</a>
+                    </div>
+                </div>
+                <a href="packages.html" class="hover:text-gray-800">Packages</a>
+                <a href="reseller.html" class="hover:text-gray-800">Reseller</a>
+                <a href="contact-us.html" class="hover:text-gray-800">Contact Us</a>
+            </nav>
+
+            <div class="hidden md:flex space-x-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Book a Call</button>
+                <button class="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700">Free Website
+                    Audit</button>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden bg-yellow-300 text-blue-800 font-medium hidden">
+            <nav class="space-y-4 py-4 text-center">
+                <a href="index.html" class="block hover:text-gray-800">Digital Marketing</a>
+                <div class="relative group">
+                    <a href="development.html" class="block hover:text-gray-800">Development</a>
+                    <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg z-10">
+                        <a href="web-development.html" class="block px-4 py-2 hover:bg-gray-200">Web Development</a>
+                        <a href="mobile-development.html" class="block px-4 py-2 hover:bg-gray-200">Mobile
+                            Development</a>
+                        <a href="api-development.html" class="block px-4 py-2 hover:bg-gray-200">API Development</a>
+                    </div>
+                </div>
+                <a href="packages.html" class="block hover:text-gray-800">Packages</a>
+                <a href="reseller.html" class="block hover:text-gray-800">Reseller</a>
+                <a href="contact-us.html" class="block hover:text-gray-800">Contact Us</a>
+                <div class="space-y-4">
+                    <button class="bg-blue-600 text-white w-full px-4 py-2 rounded-md hover:bg-blue-700">Book a
+                        Call</button>
+                    <button class="bg-yellow-600 text-white w-full px-4 py-2 rounded-md hover:bg-yellow-700">Free
+                        Website Audit</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center py-20"
+            style="background-image: url('https://via.placeholder.com/1500x500?text=About+Us+Banner');">
+            <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
+            <div class="container mx-auto relative z-10 text-center">
+                <h1 class="text-5xl font-bold text-white">About Us</h1>
+                <p class="text-lg text-white mt-4">Learn more about our mission, vision, and values.</p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900">Our Story</h2>
+                <p class="text-lg text-gray-700 text-center mt-4">Web Quince was founded with a mission to provide
+                    exceptional digital marketing solutions that empower businesses to achieve their goals. Our team of
+                    experts is dedicated to delivering innovative strategies and outstanding results.</p>
+                <div class="max-w-3xl mx-auto mt-12">
+                    <img src="https://via.placeholder.com/600x400" alt="Our Team" class="w-full rounded-lg shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900">Our Mission</h2>
+                <p class="text-lg text-gray-700 text-center mt-4">To provide top-notch digital marketing services that
+                    drive growth, engagement, and success for our clients.</p>
+            </div>
+        </section>
+
+        <!-- Our Values Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900">Our Values</h2>
+                <ul class="list-disc list-inside text-lg text-gray-700 mt-4 mx-auto max-w-2xl">
+                    <li>Integrity: We uphold the highest standards of integrity in all our actions.</li>
+                    <li>Innovation: We strive to innovate and improve continuously.</li>
+                    <li>Excellence: We are committed to providing quality service and excellence in everything we do.
+                    </li>
+                    <li>Collaboration: We believe in teamwork and partnership for success.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h2 class="text-2xl font-bold">Web Quince</h2>
+                <p class="mt-4 text-gray-300">We are a top digital marketing agency in India, offering personalized
+                    solutions to drive results for businesses worldwide.</p>
+                <p class="mt-4">&copy; 2024 Web Quince. All rights reserved.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="contact-us.html" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-300">Digital Marketing</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Web Development</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@webquince.com"
+                        class="hover:text-gray-300">info@webquince.com</a></p>
+                <p class="text-gray-300 mb-4">Phone: <a href="tel:+911234567890" class="hover:text-gray-300">+91 123 456
+                        7890</a></p>
+            </div>
+        </div>
+        <div class="bg-blue-800 py-4 mt-8">
+            <div class="container mx-auto flex justify-center space-x-6">
+                <a href="#" class="hover:text-gray-300">Facebook</a>
+                <a href="#" class="hover:text-gray-300">Twitter</a>
+                <a href="#" class="hover:text-gray-300">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Toggle mobile menu
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

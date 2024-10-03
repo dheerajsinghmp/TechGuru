@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Web Quince</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <header class="bg-yellow-400 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo Section -->
+            <div class="text-3xl font-bold text-blue-800">
+                <a href="index.html">Web Quince</a>
+            </div>
+
+            <!-- Main Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-blue-800 font-medium">
+                <a href="index.html" class="hover:text-gray-800">Digital Marketing</a>
+                <a href="development.html" class="hover:text-gray-800">Development</a>
+                <a href="packages.html" class="hover:text-gray-800">Packages</a>
+                <a href="reseller.html" class="hover:text-gray-800">Reseller</a>
+                <a href="contact-us.html" class="hover:text-gray-800">Contact Us</a>
+            </nav>
+
+            <!-- Call-to-Action Buttons -->
+            <div class="hidden md:flex space-x-4">
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Book a Call</button>
+                <button class="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700">Free Website Audit</button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-yellow-300 text-blue-800 font-medium hidden">
+            <nav class="space-y-4 py-4 text-center">
+                <a href="index.html" class="block hover:text-gray-800">Digital Marketing</a>
+                <a href="development.html" class="block hover:text-gray-800">Development</a>
+                <a href="packages.html" class="block hover:text-gray-800">Packages</a>
+                <a href="reseller.html" class="block hover:text-gray-800">Reseller</a>
+                <a href="contact-us.html" class="block hover:text-gray-800">Contact Us</a>
+                <div class="space-y-4">
+                    <button class="bg-blue-600 text-white w-full px-4 py-2 rounded-md hover:bg-blue-700">Book a Call</button>
+                    <button class="bg-yellow-600 text-white w-full px-4 py-2 rounded-md hover:bg-yellow-700">Free Website Audit</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative bg-cover bg-center py-20" style="background-image: url('https://via.placeholder.com/1500x500?text=Contact+Us+Banner');">
+            <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
+            <div class="container mx-auto relative z-10 text-center">
+                <h1 class="text-5xl font-bold text-white">Get in Touch</h1>
+                <p class="text-lg text-white mt-4">We're here to help. Contact us for any inquiries or questions.</p>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-gray-900">Contact Us</h2>
+                <p class="text-lg text-gray-700 text-center mt-4">Fill out the form below and our team will get back to you shortly.</p>
+
+                <!-- Form Container -->
+                <div class="max-w-3xl mx-auto mt-12">
+                    <form action="#" method="POST" class="bg-yellow-100 p-8 rounded-lg shadow-lg">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <!-- Name Field -->
+                            <div>
+                                <label for="name" class="block text-lg font-medium text-gray-700">Name</label>
+                                <input type="text" id="name" name="name" class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your Name" required>
+                            </div>
+
+                            <!-- Email Field -->
+                            <div>
+                                <label for="email" class="block text-lg font-medium text-gray-700">Email</label>
+                                <input type="email" id="email" name="email" class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your Email" required>
+                            </div>
+
+                            <!-- Subject Field -->
+                            <div class="col-span-2">
+                                <label for="subject" class="block text-lg font-medium text-gray-700">Subject</label>
+                                <input type="text" id="subject" name="subject" class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Subject" required>
+                            </div>
+
+                            <!-- Message Field -->
+                            <div class="col-span-2">
+                                <label for="message" class="block text-lg font-medium text-gray-700">Message</label>
+                                <textarea id="message" name="message" rows="6" class="mt-2 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-8">
+                            <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-700">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Section -->
+        <section class="py-16 bg-gray-100">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Phone -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26A2 2 0 0013 13.26V21a2 2 0 01-2 2H3a2 2 0 01-2-2V9a2 2 0 012-2z" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-gray-900">Phone</h3>
+                        <p class="text-gray-700 mt-2">+1 234 567 890</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12H3m0 0l9 9m-9-9l9-9" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-gray-900">Email</h3>
+                        <p class="text-gray-700 mt-2">info@webquince.com</p>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 mx-auto text-blue-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6v15h18V6zM12 3v18m-4-4l4-4-4-4m8 0l-4 4 4 4" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-gray-900">Location</h3>
+                        <p class="text-gray-700 mt-2">123 Web Quince St, City, Country</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <!-- Company Info Section -->
+            <div>
+                <h2 class="text-2xl font-bold">Web Quince</h2>
+                <p class="mt-4 text-gray-300">We are a top digital marketing agency in India, offering personalized
+                    solutions to drive results for businesses worldwide.</p>
+                <p class="mt-4">&copy; 2024 Web Quince. All rights reserved.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Our Services</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Case Studies</a></li>
+                    <li><a href="contact-us.html" class="hover:text-gray-300">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-gray-300">Digital Marketing</a></li>
+                    <li><a href="#" class="hover:text-gray-300">SEO Optimization</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Web Development</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Social Media Marketing</a></li>
+                    <li><a href="#" class="hover:text-gray-300">PPC Campaigns</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact & Newsletter Section -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@webquince.com"
+                        class="hover:text-gray-300">info@webquince.com</a></p>
+                <p class="text-gray-300 mb-4">Phone: <a href="tel:+911234567890" class="hover:text-gray-300">+91 123 456
+                        7890</a></p>
+
+                <!-- Newsletter Form -->
+                <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+                <form class="flex space-x-2">
+                    <input type="email" placeholder="Your email" class="p-2 w-full rounded-md text-black" required>
+                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="bg-blue-800 py-4 mt-8">
+            <div class="container mx-auto flex justify-center space-x-6">
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.56v15.08c0 2.51-2.04 4.56-4.56 4.56H4.56A4.56 4.56 0 010 19.64V4.56A4.56 4.56 0 014.56 0h14.88A4.56 4.56 0 0124 4.56zm-10.68 12.36v-6.08H9.76v6.08h3.56zm-1.76-7.12a2.06 2.06 0 10-2.06-2.06 2.06 2.06 0 002.06 2.06zm8.48 7.12v-3.04c0-1.44-.68-2.12-1.88-2.12-1 0-1.64.68-1.88 1.36h-.04v-1.16h-3.52v6.08h3.56v-2.88c0-.76.48-1.36 1.16-1.36s1.08.6 1.08 1.32v2.92H20z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path
+                            d="M22.23 5.9c-.77.34-1.6.57-2.47.67a4.28 4.28 0 001.86-2.36 8.52 8.52 0 01-2.7 1.03 4.22 4.22 0 00-7.2 3.85 12.02 12.02 0 01-8.73-4.42 4.22 4.22 0 001.31 5.64A4.16 4.16 0 012 9.7v.05a4.22 4.22 0 003.38 4.14 4.28 4.28 0 01-1.91.07 4.23 4.23 0 003.95 2.94 8.51 8.51 0 01-6.29 1.76A12.02 12.02 0 006.29 21 11.98 11.98 0 0018.5 9.36c0-.18-.01-.35-.03-.52A8.56 8.56 0 0020 7.5a8.43 8.43 0 01-2.45.67 4.24 4.24 0 001.86-2.36 8.48 8.48 0 01-2.7 1.03A4.22 4.22 0 0022.23 5.9z" />
+                    </svg>
+                </a>
+                <a href="#" class="hover:text-gray-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
+                        <path
+                            d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM8.21 19.6H5.22V9h2.99v10.6zm-1.5-12.1c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zM19.6 19.6h-2.99v-5.46c0-1.3-.03-2.97-1.81-2.97-1.81 0-2.09 1.41-2.09 2.86v5.57h-2.99V9h2.87v1.46h.04c.4-.74 1.36-1.52 2.79-1.52 2.98 0 3.53 1.96 3.53 4.51V19.6z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Toggle mobile menu
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
