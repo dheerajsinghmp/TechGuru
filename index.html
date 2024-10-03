@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Marketing Agency</title>
+    <title>Tech Guru | Latest Tech News & Innovations</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,40 +16,44 @@
 <body class="bg-gray-200">
 
     <!-- Navbar -->
-    <header class="bg-yellow-400 py-4">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-3xl font-bold text-blue-800">Tech Guru</div>
+    <header class="bg-blue-900 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo Section -->
+            <div class="text-3xl font-bold text-yellow-400">
+                <a href="index.html">Tech Guru</a>
+            </div>
 
-            <!-- Mobile Menu Button (Hamburger Icon) -->
+            <!-- Main Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-yellow-400 font-medium">
+                <a href="index.html" class="hover:text-gray-200">Home</a>
+                <a href="tech-news.html" class="hover:text-gray-200">Tech News</a>
+                <a href="innovation.html" class="hover:text-gray-200">Innovation</a>
+                <a href="reviews.html" class="hover:text-gray-200">Reviews</a>
+                <a href="contact.html" class="hover:text-gray-200">Contact</a>
+            </nav>
+
+            <!-- Mobile Navigation -->
             <div class="md:hidden">
-                <button id="mobile-menu-button" class="text-blue-800 focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-400" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16" />
+                            d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
                 </button>
             </div>
-
-            <!-- Desktop Navbar -->
-            <nav class="hidden md:flex space-x-6 text-white font-medium">
-                <a href="index.html" class="hover:text-gray-800">Digital Marketing</a>
-                <a href="Web.html" class="hover:text-gray-800">Development</a>
-                <a href="#" class="hover:text-gray-800">Packages</a>
-                <a href="#" class="hover:text-gray-800">Reseller</a>
-                <a href="contact-us.html" class="hover:text-gray-800">Contact Us</a>
-            </nav>
         </div>
 
-        <!-- Mobile Dropdown Menu (Hidden by Default) -->
-        <nav id="mobile-menu" class="hidden bg-yellow-400 md:hidden">
-            <a href="index.html" class="block px-4 py-2 text-white hover:text-gray-800">Home</a>
-            <a href="Web.html" class="block px-4 py-2 text-white hover:text-gray-800">iiias</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-gray-800">Packages</a>
-            <a href="#" class="block px-4 py-2 text-white hover:text-gray-800">Reseller</a>
-            <a href="contact-us.html" class="block px-4 py-2 text-white hover:text-gray-800">Contact Us</a>
-
-        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-blue-800 text-yellow-400 font-medium hidden">
+            <nav class="space-y-4 py-4 text-center">
+                <a href="index.html" class="block hover:text-gray-200">Home</a>
+                <a href="tech-news.html" class="block hover:text-gray-200">Tech News</a>
+                <a href="innovation.html" class="block hover:text-gray-200">Innovation</a>
+                <a href="reviews.html" class="block hover:text-gray-200">Reviews</a>
+                <a href="contact.html" class="block hover:text-gray-200">Contact</a>
+            </nav>
+        </div>
     </header>
 
     <script>
@@ -62,16 +66,18 @@
         });
     </script>
 
-
+    <!-- Hero Section -->
     <section class="relative bg-cover bg-center py-20"
         style="background-image: url('image/BlogImage/artificial-intelligence-new-technology.jpg');">
         <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
             <div class="md:w-1/2 text-white">
-                <h1 class="text-5xl font-bold leading-tight">Fueling Innovation, One Tech Story at a Time</h1>
-                <p class="text-lg mt-4">.</p>
-                <button class="mt-6 bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-600">Get
-                    Free Consultation</button>
+                <h1 class="text-5xl font-bold leading-tight">Stay Updated on Tech Innovation & Latest News</h1>
+                <p class="text-lg mt-4">Your source for the latest tech trends, in-depth reviews, and industry insights.
+                </p>
+                <button
+                    class="mt-6 bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-600">Subscribe
+                    for Tech Insights</button>
             </div>
         </div>
     </section>
@@ -79,171 +85,132 @@
     <!-- Proven Track Record Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto">
-            <h2 class="ali text-4xl font-bold text-start text-gray-900">Our Proven Track Record</h2>
+            <h2 class="ali text-4xl font-bold text-start text-gray-900">Latest Tech News & Reviews</h2>
 
-            <!-- Case Study Grid -->
+            <!-- Tech News Grid -->
             <div class="row">
                 <!-- Main Column -->
                 <div class="col-12 col-md-9">
-                    <!-- First Block -->
+                    <!-- First Article -->
                     <div class="px-4 py-4 rounded-lg shadow-lg mb-4">
                         <a href="">
-                            <h3 class="text-2xl font-bold text-gray-900">The release of Apple iPhone SE 4 will signal a major change in the iPhone era.</h3>
+                            <h3 class="text-2xl font-bold text-gray-900">The release of Apple iPhone SE 4 signals a
+                                major shift in the smartphone market</h3>
                         </a>
                         <div class="d-flex flex-col md:flex-row justify-start">
-                            <img src="image/BlogImage/iphone-se4-2.avif"  alt="Ecommerce Image"
+                            <img src="image/BlogImage/iphone-se4-2.avif" alt="iPhone SE 4 Image"
                                 class="h-48 w-full md:w-auto object-cover border-2 p-1 pr-1">
-                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">The release of the iPhone SE 4 marks a pivotal moment in the evolution of Apple’s iPhone lineup. With its blend of powerful performance and an affordable price point, the SE 4 represents Apple’s commitment to delivering flagship experiences to a wider audience. As it incorporates modern design elements, enhanced processing power, and advanced features previously reserved for higher-end models, the iPhone SE 4 is poised to reshape the mid-range smartphone market. This release not only reflects a shift in Apple's strategy but also sets the stage for the future of affordable innovation in the iPhone era....</p>
+                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">The iPhone SE 4 represents a major shift for
+                                Apple’s product lineup, delivering flagship features at an affordable price. This device
+                                is set to challenge the mid-range smartphone market with premium capabilities...</p>
                         </div>
                     </div>
-                    <!-- Second Block -->
-                    <div class=" px-4 py-4 rounded-lg shadow-lg mb-4">
-                        <a href="blogpage/Lema.html">
-                            <h3 class="text-2xl font-bold text-gray-900">Unlocking the Potential of Meta's New Llama 2: Uses and Pointers</h3>
+                    <!-- Second Article -->
+                    <div class="px-4 py-4 rounded-lg shadow-lg mb-4">
+                        <a href="blogpage/Llama.html">
+                            <h3 class="text-2xl font-bold text-gray-900">Unlocking the Potential of Meta's Llama 2 AI
+                                Model</h3>
                         </a>
                         <div class="d-flex flex-col md:flex-row justify-start">
-                            <img src="image/BlogImage/images.jpeg"  alt="Ecommerce Image"
+                            <img src="image/BlogImage/images.jpeg" alt="Llama 2 AI"
                                 class="h-48 w-full md:w-auto object-cover border-2 p-1 pr-1">
-                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">Artificial intelligence (AI) has been enhanced by the groundbreaking release of the large language model (LLM) Llama 2, which is available as an open-source project by Meta....</p>
+                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">Meta's Llama 2 represents the next big leap in AI
+                                technology, offering open-source access to a powerful large language model...</p>
                         </div>
                     </div>
-                    <!-- Third Block -->
+                    <!-- Third Article -->
                     <div class="bg-yellow-200 px-4 py-4 rounded-lg shadow-lg mb-4">
                         <a href="">
-                            <h3 class="text-2xl font-bold text-gray-900">Meta Lama Ai</h3>
+                            <h3 class="text-2xl font-bold text-gray-900">The Future of AI with Meta’s Llama 2</h3>
                         </a>
                         <div class="d-flex flex-col md:flex-row justify-start">
-                            <img src="image/BlogImage/images.jpeg" alt="Ecommerce Image"
+                            <img src="image/BlogImage/images.jpeg" alt="AI Future Image"
                                 class="h-48 w-full md:w-auto object-cover border-2 p-1 pr-1">
-                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">Lorem ipsum dolor sit amet consectetur,
-                                adipisicing elit. Porro labore necessitatibus dignissimos quia...</p>
+                            <p class="text-gray-900 ml-3 mt-3 md:mt-0">Explore the potential of AI with Meta’s
+                                groundbreaking Llama 2 model, pushing the boundaries of technology...</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Right Column -->
+                <!-- Sidebar (Recent Posts & Ads) -->
                 <div class="col-12 col-md-3">
                     <div class="bg-gray-200 px-4 py-4 rounded-lg shadow-lg mb-4">
                         <h4 class="text-xl font-bold text-gray-900 mb-3">Recent Posts</h4>
-                        <ul class="list-disc pl-5 text-gray-800">
-                            <li><a href="#" class="text-blue-500 hover:underline">Post 1 Title</a></li>
-                            <li><a href="#" class="text-blue-500 hover:underline">Post 2 Title</a></li>
-                            <li><a href="#" class="text-blue-500 hover:underline">Post 3 Title</a></li>
-                            <li><a href="#" class="text-blue-500 hover:underline">Post 4 Title</a></li>
+                        <ul class="list-disc pl-5 text-gray-700">
+                            <li><a href="#">5 Tech Startups to Watch in 2024</a></li>
+                            <li><a href="#">The Best AI-Powered Gadgets of the Year</a></li>
+                            <li><a href="#">Why the iPhone 16 Pro Max is a Game-Changer</a></li>
+                            <li><a href="#">Google’s AI Advancements in Healthcare</a></li>
                         </ul>
                     </div>
 
-                    <div class="bg-gray-200 px-4 py-4 rounded-lg shadow-lg mb-4">
-                        <h4 class="text-xl font-bold text-gray-900 mb-3">Advertisement</h4>
-                        <div class="h-48 bg-gray-400 flex items-center justify-center text-white font-bold text-lg">
-                            Ad Space
-                        </div>
-                    </div>
-
                     <div class="bg-gray-200 px-4 py-4 rounded-lg shadow-lg">
-                        <h4 class="text-xl font-bold text-gray-900 mb-3">Newsletter Signup</h4>
-                        <form>
-                            <input type="email" placeholder="Enter your email"
-                                class="w-full px-2 py-1 mb-2 border border-gray-300 rounded">
-                            <button
-                                class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Subscribe</button>
-                        </form>
+                        <h4 class="text-xl font-bold text-gray-900 mb-3">Advertisement</h4>
+                        <img src="image/BlogImage/advertisement.jpg" alt="Advertisement" class="rounded-lg">
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
-    <!-- Badges Section -->
-    <!-- <section class="py-10 bg-gray-100">
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-            <img src="https://via.placeholder.com/100" alt="Award 1" class="mx-auto">
-            <img src="https://via.placeholder.com/100" alt="Award 2" class="mx-auto">
-            <img src="https://via.placeholder.com/100" alt="Award 3" class="mx-auto">
-            <img src="https://via.placeholder.com/100" alt="Award 4" class="mx-auto">
-        </div>
-    </section> -->
 
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-12">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-
-            <!-- Company Info Section -->
+        <div class="container mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Info -->
             <div>
-                <h2 class="text-2xl font-bold">Web Quince</h2>
-                <p class="mt-4 text-gray-300">We are a top digital marketing agency in India, offering personalized
-                    solutions to drive results for businesses worldwide.</p>
-                <p class="mt-4">&copy; 2024 Web Quince. All rights reserved.</p>
+                <h2 class="text-2xl font-bold">Tech Guru</h2>
+                <p class="mt-4 text-gray-300">Tech Guru is your go-to source for the latest in tech news, AI
+                    innovations, and tech reviews. We provide in-depth insights into how technology is shaping the world
+                    of tomorrow.</p>
+                <p class="mt-4">&copy; 2024 Tech Guru. All rights reserved.</p>
             </div>
 
-            <!-- Quick Links Section -->
+            <!-- Quick Links -->
             <div>
                 <h3 class="text-xl font-bold mb-4">Quick Links</h3>
                 <ul class="space-y-2">
                     <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
-                    <li><a href="#" class="hover:text-gray-300">About Us</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Our Services</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Case Studies</a></li>
-                    <li><a href="contact-us.html" class="hover:text-gray-300">Contact Us</a></li>
+                    <li><a href="tech-news.html" class="hover:text-gray-300">Tech News</a></li>
+                    <li><a href="innovation.html" class="hover:text-gray-300">Innovation</a></li>
+                    <li><a href="reviews.html" class="hover:text-gray-300">Reviews</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-300">Contact Us</a></li>
                 </ul>
             </div>
 
-            <!-- Services Section -->
+            <!-- Our Services -->
             <div>
-                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <h3 class="text-xl font-bold mb-4">Our Focus</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-gray-300">Digital Marketing</a></li>
-                    <li><a href="#" class="hover:text-gray-300">SEO Optimization</a></li>
+                    <li><a href="#" class="hover:text-gray-300">AI & Machine Learning</a></li>
                     <li><a href="#" class="hover:text-gray-300">Web Development</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Social Media Marketing</a></li>
-                    <li><a href="#" class="hover:text-gray-300">PPC Campaigns</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Cybersecurity</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Cloud Computing</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Data Science</a></li>
                 </ul>
             </div>
 
-            <!-- Contact & Newsletter Section -->
+            <!-- Contact Info -->
             <div>
-                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@webquince.com"
-                        class="hover:text-gray-300">info@webquince.com</a></p>
-                <p class="text-gray-300 mb-4">Phone: <a href="tel:+911234567890" class="hover:text-gray-300">+91 123 456
-                        7890</a></p>
-
-                <!-- Newsletter Form -->
-                <h3 class="text-xl font-bold mb-4">Subscribe to Our Newsletter</h3>
-                <form class="flex space-x-2">
-                    <input type="email" placeholder="Your email" class="p-2 w-full rounded-md text-black" required>
-                    <button class="bg-yellow-500 hover:bg-yellow-600 text-white px-4 py-2 rounded-md">Subscribe</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Social Media Section -->
-        <div class="bg-blue-800 py-4 mt-8">
-            <div class="container mx-auto flex justify-center space-x-6">
-                <a href="#" class="hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path
-                            d="M24 4.56v15.08c0 2.51-2.04 4.56-4.56 4.56H4.56A4.56 4.56 0 010 19.64V4.56A4.56 4.56 0 014.56 0h14.88A4.56 4.56 0 0124 4.56zm-10.68 12.36v-6.08H9.76v6.08h3.56zm-1.76-7.12a2.06 2.06 0 10-2.06-2.06 2.06 2.06 0 002.06 2.06zm8.48 7.12v-3.04c0-1.44-.68-2.12-1.88-2.12-1 0-1.64.68-1.88 1.36h-.04v-1.16h-3.52v6.08h3.56v-2.88c0-.76.48-1.36 1.16-1.36s1.08.6 1.08 1.32v2.92H20z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path
-                            d="M22.23 5.9c-.77.34-1.6.57-2.47.67a4.28 4.28 0 001.86-2.36 8.52 8.52 0 01-2.7 1.03 4.22 4.22 0 00-7.2 3.85 12.02 12.02 0 01-8.73-4.42 4.22 4.22 0 001.31 5.64A4.16 4.16 0 012 9.7v.05a4.22 4.22 0 003.38 4.14 4.28 4.28 0 01-1.91.07 4.23 4.23 0 003.95 2.94 8.51 8.51 0 01-6.29 1.76A12.02 12.02 0 006.29 21 11.98 11.98 0 0018.5 9.36c0-.18-.01-.35-.03-.52A8.56 8.56 0 0020 7.5a8.43 8.43 0 01-2.45.67 4.24 4.24 0 001.86-2.36 8.48 8.48 0 01-2.7 1.03A4.22 4.22 0 0022.23 5.9z" />
-                    </svg>
-                </a>
-                <a href="#" class="hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
-                        <path
-                            d="M22.23 0H1.77C.79 0 0 .79 0 1.77v20.46C0 23.21.79 24 1.77 24h20.46c.98 0 1.77-.79 1.77-1.77V1.77C24 .79 23.21 0 22.23 0zM8.21 19.6H5.22V9h2.99v10.6zm-1.5-12.1c-.96 0-1.74-.78-1.74-1.74s.78-1.74 1.74-1.74 1.74.78 1.74 1.74-.78 1.74-1.74 1.74zM19.6 19.6h-2.99v-5.46c0-1.3-.03-2.97-1.81-2.97-1.81 0-2.09 1.41-2.09 2.86v5.57h-2.99V9h2.87v1.46h.04c.4-.74 1.36-1.52 2.79-1.52 2.98 0 3.53 1.96 3.53 4.51V19.6z" />
-                    </svg>
-                </a>
+                <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                <p>Email: contact@techguru.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 
 </body>
 
