@@ -2,47 +2,59 @@
 <html lang="en">
 
 <head>
+    <meta name="google-site-verification" content="iN3ZM_jESE4u9bUm855hqg1zRcH8_fII4OsGODn-GOc" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Web Quince</title>
+    <meta name="description"
+        content="Stay updated with the latest in tech news, including AI innovations, 5G developments, Quantum Computing advancements, and Augmented Reality experiences. Explore the future of technology with Tech Guru.">
+    <meta name="keywords" content="Tech News, AI, 5G, Quantum Computing, Augmented Reality, Tech Innovations, Future Technology tech news
+        latest tech news
+        new technology
+        latest technology news
+        latest tech
+        news technology
+        new technology news
+        new innovations in technology
+        new ai technology
+        new tech news
+        recent tech news">
+
+    <title>Tech Guru | Latest Tech News & Innovations</title>
+    <link rel="icon" href="image/BlogImage/05a83450-0cc7-4cf7-839e-aa2b803a8ab7_1-removebg-preview.png"
+        type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-200">
 
-    <!-- Header Section -->
-    <header class="bg-yellow-400 py-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <div class="text-3xl font-bold text-blue-800">
-                <a href="index.html">Web Quince</a>
+    <!-- Navbar -->
+    <header class="bg-blue-900 py-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <!-- Logo Section -->
+            <div class="flex items-center space-x-3">
+                <img src="image/BlogImage/05a83450-0cc7-4cf7-839e-aa2b803a8ab7_1-removebg-preview.png"
+                    alt="Tech Guru Logo" class="h-12 w-auto">
+                <a href="index.html" class="text-3xl font-bold text-white">Tech Guru</a>
             </div>
 
-            <nav class="hidden md:flex space-x-6 text-blue-800 font-medium">
-                <a href="index.html" class="hover:text-gray-800">Digital Marketing</a>
-                <div class="relative group">
-                    <a href="development.html" class="hover:text-gray-800">Development</a>
-                    <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg z-10">
-                        <a href="web-development.html" class="block px-4 py-2 hover:bg-gray-200">Web Development</a>
-                        <a href="mobile-development.html" class="block px-4 py-2 hover:bg-gray-200">Mobile
-                            Development</a>
-                        <a href="api-development.html" class="block px-4 py-2 hover:bg-gray-200">API Development</a>
-                    </div>
-                </div>
-                <a href="packages.html" class="hover:text-gray-800">Packages</a>
-                <a href="reseller.html" class="hover:text-gray-800">Reseller</a>
-                <a href="contact-us.html" class="hover:text-gray-800">Contact Us</a>
+            <!-- Main Navigation Links -->
+            <nav class="hidden md:flex space-x-6 text-gray-100 font-medium">
+                <a href="index.html" class="hover:text-yellow-200">Home</a>
+                <a href="tech-news.html" class="hover:text-yellow-200">Tech News</a>
+                <a href="about.html" class="hover:text-yellow-200">About</a>
+                <a href="contact-us.html" class="hover:text-yellow-200">Contact</a>
             </nav>
 
-            <div class="hidden md:flex space-x-4">
-                <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Book a Call</button>
-                <button class="bg-yellow-600 text-white px-4 py-2 rounded-md hover:bg-yellow-700">Free Website
-                    Audit</button>
-            </div>
-
+            <!-- Mobile Navigation -->
             <div class="md:hidden">
                 <button id="mobile-menu-button" class="focus:outline-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-400" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M4 6h16M4 12h16m-7 6h7" />
                     </svg>
@@ -50,27 +62,14 @@
             </div>
         </div>
 
-        <div id="mobile-menu" class="md:hidden bg-yellow-300 text-blue-800 font-medium hidden">
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-blue-800 text-yellow-400 font-medium hidden">
             <nav class="space-y-4 py-4 text-center">
-                <a href="index.html" class="block hover:text-gray-800">Digital Marketing</a>
-                <div class="relative group">
-                    <a href="development.html" class="block hover:text-gray-800">Development</a>
-                    <div class="absolute left-0 hidden group-hover:block bg-white shadow-lg mt-2 rounded-lg z-10">
-                        <a href="web-development.html" class="block px-4 py-2 hover:bg-gray-200">Web Development</a>
-                        <a href="mobile-development.html" class="block px-4 py-2 hover:bg-gray-200">Mobile
-                            Development</a>
-                        <a href="api-development.html" class="block px-4 py-2 hover:bg-gray-200">API Development</a>
-                    </div>
-                </div>
-                <a href="packages.html" class="block hover:text-gray-800">Packages</a>
-                <a href="reseller.html" class="block hover:text-gray-800">Reseller</a>
-                <a href="contact-us.html" class="block hover:text-gray-800">Contact Us</a>
-                <div class="space-y-4">
-                    <button class="bg-blue-600 text-white w-full px-4 py-2 rounded-md hover:bg-blue-700">Book a
-                        Call</button>
-                    <button class="bg-yellow-600 text-white w-full px-4 py-2 rounded-md hover:bg-yellow-700">Free
-                        Website Audit</button>
-                </div>
+                <a href="index.html" class="block hover:text-gray-200">Home</a>
+                <a href="tech-news.html" class="block hover:text-gray-200">Tech News</a>
+                <a href="innovation.html" class="block hover:text-gray-200">Innovation</a>
+                <a href="reviews.html" class="block hover:text-gray-200">Reviews</a>
+                <a href="contact.html" class="block hover:text-gray-200">Contact</a>
             </nav>
         </div>
     </header>
@@ -79,7 +78,7 @@
     <main>
         <!-- Hero Section -->
         <section class="relative bg-cover bg-center py-20"
-            style="background-image: url('https://via.placeholder.com/1500x500?text=About+Us+Banner');">
+            style="background-image: url('https://via.placeholder.com/1500x500?text=About+Us+Banner'); background-size: cover;">
             <div class="absolute inset-0 bg-blue-900 opacity-50"></div>
             <div class="container mx-auto relative z-10 text-center">
                 <h1 class="text-5xl font-bold text-white">About Us</h1>
@@ -91,8 +90,8 @@
         <section class="py-16 bg-white">
             <div class="container mx-auto">
                 <h2 class="text-4xl font-bold text-center text-gray-900">Our Story</h2>
-                <p class="text-lg text-gray-700 text-center mt-4">Web Quince was founded with a mission to provide
-                    exceptional digital marketing solutions that empower businesses to achieve their goals. Our team of
+                <p class="text-lg text-gray-700 text-center mt-4">Tech Guru was founded with a mission to provide
+                    exceptional digital marketing and development solutions that empower businesses to achieve their goals. Our team of
                     experts is dedicated to delivering innovative strategies and outstanding results.</p>
                 <div class="max-w-3xl mx-auto mt-12">
                     <img src="https://via.placeholder.com/600x400" alt="Our Team" class="w-full rounded-lg shadow-lg">
@@ -104,7 +103,7 @@
         <section class="py-16 bg-gray-100">
             <div class="container mx-auto">
                 <h2 class="text-4xl font-bold text-center text-gray-900">Our Mission</h2>
-                <p class="text-lg text-gray-700 text-center mt-4">To provide top-notch digital marketing services that
+                <p class="text-lg text-gray-700 text-center mt-4">To provide top-notch digital marketing and development services that
                     drive growth, engagement, and success for our clients.</p>
             </div>
         </section>
@@ -128,10 +127,10 @@
     <footer class="bg-blue-900 text-white py-12">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-                <h2 class="text-2xl font-bold">Web Quince</h2>
-                <p class="mt-4 text-gray-300">We are a top digital marketing agency in India, offering personalized
+                <h2 class="text-2xl font-bold">Tech Guru</h2>
+                <p class="mt-4 text-gray-300">We are a top digital marketing and development agency offering personalized
                     solutions to drive results for businesses worldwide.</p>
-                <p class="mt-4">&copy; 2024 Web Quince. All rights reserved.</p>
+                <p class="mt-4">&copy; 2024 Tech Guru. All rights reserved.</p>
             </div>
             <div>
                 <h3 class="text-xl font-bold mb-4">Quick Links</h3>
@@ -149,8 +148,8 @@
             </div>
             <div>
                 <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@webquince.com"
-                        class="hover:text-gray-300">info@webquince.com</a></p>
+                <p class="text-gray-300 mb-2">Email: <a href="mailto:info@techguru.com"
+                        class="hover:text-gray-300">info@techguru.com</a></p>
                 <p class="text-gray-300 mb-4">Phone: <a href="tel:+911234567890" class="hover:text-gray-300">+91 123 456
                         7890</a></p>
             </div>
