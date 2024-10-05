@@ -139,7 +139,7 @@ async function fetchTechNews(searchQuery = '') {
         const apiKey = '8c006e5c2b0c034edcfc2ec6e69bc273';
         const url = searchQuery
             ? `https://gnews.io/api/v4/search?q=${encodeURIComponent(searchQuery)}&lang=en&country=us&max=10&apikey=${apiKey}`
-            : `https://gnews.io/api/v4/top-headlines?category=general&lang=en&country=us&max=10&apikey=${apiKey}`;
+            : `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=us&max=10&apikey=${apiKey}`;
 
         const response = await fetch(url);
         const data = await response.json();
