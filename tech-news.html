@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- SEO Meta Tags -->
     <meta name="google-site-verification" content="iN3ZM_jESE4u9bUm855hqg1zRcH8_fII4OsGODn-GOc" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,12 @@
         content="Stay updated with the latest in tech news, including AI innovations, 5G developments, Quantum Computing advancements, and Augmented Reality experiences. Explore the future of technology with Tech Guru.">
     <meta name="keywords"
         content="Tech News, AI, 5G, Quantum Computing, Augmented Reality, Tech Innovations, Future Technology">
+    <meta name="author" content="Tech Guru">
+    <meta property="og:title" content="Tech Guru | Latest Tech News & Innovations">
+    <meta property="og:description" content="Stay informed with AI, 5G, and the latest tech advancements.">
+    <meta property="og:image" content="image/BlogImage/05a83450-0cc7-4cf7-839e-aa2b803a8ab7_1-removebg-preview.png">
+    <meta property="og:url" content="https://techguru.com">
+    <meta name="robots" content="index, follow">
     <title>Tech Guru | Latest Tech News & Innovations</title>
     <link rel="icon" href="image/BlogImage/05a83450-0cc7-4cf7-839e-aa2b803a8ab7_1-removebg-preview.png"
         type="image/x-icon">
@@ -78,24 +85,31 @@
                 <button id="search-button" type="button"
                     class="bg-blue-900 text-white px-6 py-2 rounded-lg hover:bg-blue-900 transition-all duration-300">Search</button>
             </div>
-            
+
 
             <!-- Tech News Grid -->
             <div id="news-grid" class="row mt-8">
                 <!-- Dynamic content will be injected here -->
+            </div>
+            <div class="flex justify-center mt-8" id="pagination-controls">
+                <button id="prev-button" class="bg-blue-900 text-white px-4 py-2 rounded-lg mr-2"
+                    disabled>Previous</button>
+                <button id="next-button" class="bg-blue-900 text-white px-4 py-2 rounded-lg">Next</button>
             </div>
         </div>
     </section>
 
 
     <!-- Footer -->
+
     <footer class="bg-blue-900 text-white py-12">
         <div class="container mx-auto px-4 md:px-10 grid grid-cols-1 md:grid-cols-4 gap-8">
             <!-- Company Info -->
             <div>
                 <h2 class="text-2xl font-bold">Tech Guru</h2>
-                <p class="mt-4 text-gray-300">Your go-to source for the latest in tech news, AI innovations, and tech
-                    reviews. We provide in-depth insights into how technology is shaping the world of tomorrow.</p>
+                <p class="mt-4 text-gray-300">Tech Guru is your go-to source for the latest in tech news, AI
+                    innovations, and tech reviews. We provide in-depth insights into how technology is shaping the world
+                    of tomorrow.</p>
                 <p class="mt-4">&copy; 2024 Tech Guru. All rights reserved.</p>
             </div>
 
@@ -105,100 +119,125 @@
                 <ul class="space-y-2">
                     <li><a href="index.html" class="hover:text-gray-300">Home</a></li>
                     <li><a href="tech-news.html" class="hover:text-gray-300">Tech News</a></li>
-                    <li><a href="innovation.html" class="hover:text-gray-300">Innovation</a></li>
-                    <li><a href="reviews.html" class="hover:text-gray-300">Reviews</a></li>
+                    <li><a href="about.html" class="hover:text-gray-300">about</a></li>
                     <li><a href="contact-us.html" class="hover:text-gray-300">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- Our Services -->
             <div>
-                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <h3 class="text-xl font-bold mb-4">Our Focus</h3>
                 <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-gray-300">Tech Consulting</a></li>
-                    <li><a href="#" class="hover:text-gray-300">AI Solutions</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Product Reviews</a></li>
+                    <li><a href="#" class="hover:text-gray-300">AI & Machine Learning</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Cybersecurity</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Cloud Computing</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Data Science</a></li>
                 </ul>
             </div>
 
-            <!-- Social Media -->
+            <!-- Contact Info -->
             <div>
-                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
-                <ul class="space-y-2">
-                    <li><a href="#" class="hover:text-gray-300">Twitter</a></li>
-                    <li><a href="#" class="hover:text-gray-300">LinkedIn</a></li>
-                    <li><a href="#" class="hover:text-gray-300">Instagram</a></li>
-                </ul>
+                <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+                <p>Email: contact@techguru.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <div class="mt-4 flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
         </div>
     </footer>
+
+
     <script>
-       // Fetch Tech News from API with an optional search query
-async function fetchTechNews(searchQuery = '') {
-    try {
-        const apiKey = '8c006e5c2b0c034edcfc2ec6e69bc273';
-        const url = searchQuery
-            ? `https://gnews.io/api/v4/search?q=${encodeURIComponent(searchQuery)}&lang=en&country=us&max=10&apikey=${apiKey}`
-            : `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=us&max=10&apikey=${apiKey}`;
+        let currentPage = 1;
+        const pageSize = 10;  // Set page size (articles per page)
 
-        const response = await fetch(url);
-        const data = await response.json();
+        async function fetchTechNews(searchQuery = '', page = 1) {
+            try {
+                const apiKey = '8c006e5c2b0c034edcfc2ec6e69bc273';
+                const url = searchQuery
+                    ? `https://gnews.io/api/v4/search?q=${encodeURIComponent(searchQuery)}&lang=en&country=us&max=${pageSize}&page=${page}&apikey=${apiKey}`
+                    : `https://gnews.io/api/v4/top-headlines?category=technology&lang=en&country=us&max=${pageSize}&page=${page}&apikey=${apiKey}`;
 
-        // Make sure articles are available
-        if (data.articles && data.articles.length > 0) {
-            displayNews(data.articles);
-        } else {
-            console.error('No articles found in the API response');
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch news');
+                }
+
+                const data = await response.json();
+
+                // Ensure articles are available before displaying them
+                if (data.articles && data.articles.length > 0) {
+                    displayNews(data.articles);
+                    togglePagination(data.totalArticles, data.articles.length); // Adjust pagination
+                } else {
+                    document.getElementById('news-grid').innerHTML = '<p>No articles found.</p>';
+                }
+            } catch (error) {
+                console.error('Error fetching news:', error);
+                document.getElementById('news-grid').innerHTML = '<p>Error fetching news. Please try again later.</p>';
+            }
         }
-    } catch (error) {
-        console.error('Error fetching news:', error);
-    }
-}
 
-// Display Tech News on the Page
-function displayNews(articles) {
-    const newsGrid = document.getElementById('news-grid');
-    newsGrid.innerHTML = ''; // Clear any previous content
+        function displayNews(articles) {
+            const newsGrid = document.getElementById('news-grid');
+            newsGrid.innerHTML = '';  // Clear previous articles
 
-    articles.forEach(article => {
-        console.log(article);
-        
-        const articleHTML = `
-            <div class="col-12 col-md-6 mb-6">
-                <div class="bg-gray-100 p-4 rounded-lg shadow-lg">
-                    <a href="${article.url}" target="_blank">
-                        <h2 class="text-2xl font-bold text-gray-900">${article.title}</h2>
-                    </a>
-                    <img src="${article.image ? article.image : 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7KG7xLTZLgP9i_LV32xiC6ysQID3Fx5wq3Q&s'}" alt="${article.title}" class="h-48 w-full object-cover rounded-lg mt-4">
-                    <p class="text-gray-700 mt-4">${article.description ? article.description : 'No description available.'}</p>
-                    <a href="${article.url}" target="_blank" class="text-blue-600 hover:underline mt-2 inline-block">Read More</a>
+            articles.forEach(article => {
+                console.log(article);
+
+                const articleHTML = `
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="${article.image}" class="card-img-top" alt="${article.title}">
+                    <div class="card-body">
+                        <h5 class="card-title">${article.title}</h5>
+                        <p class="card-text">${article.description}</p>
+                        <div class="d-flex align-items-center">
+                            <a href="${article.url}" class="btn btn-primary" target="_blank">Read More</a>
+                            <p class="ms-auto mb-0">${new Date(article.publishedAt).toLocaleDateString()}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         `;
-        newsGrid.insertAdjacentHTML('beforeend', articleHTML);
-    });
-}
+                newsGrid.insertAdjacentHTML('beforeend', articleHTML);
+            });
+        }
 
-// Initialize on page load
-window.onload = () => {
-    fetchTechNews();
-};
+        // Toggle pagination buttons
+        function togglePagination(totalArticles, fetchedArticlesCount) {
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
 
-// Handle search functionality
-document.getElementById('search-button').addEventListener('click', () => {
-    const searchInput = document.getElementById('search-input').value.trim();
-    if (searchInput) {
-        fetchTechNews(searchInput);
-    }
-});
+            prevButton.disabled = currentPage === 1;
+            nextButton.disabled = fetchedArticlesCount < pageSize || currentPage * pageSize >= totalArticles;
+        }
 
-// Mobile menu toggle
-const mobileMenuButton = document.getElementById('mobile-menu-button');
-const mobileMenu = document.getElementById('mobile-menu');
+        // Event listeners for pagination buttons
+        document.getElementById('prev-button').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                fetchTechNews(document.getElementById('search-input').value.trim(), currentPage);
+            }
+        });
 
-mobileMenuButton.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
-});
+        document.getElementById('next-button').addEventListener('click', () => {
+            currentPage++;
+            fetchTechNews(document.getElementById('search-input').value.trim(), currentPage);
+        });
+
+        // Handle the search button click
+        document.getElementById('search-button').addEventListener('click', () => {
+            currentPage = 1;  // Reset to the first page on new search
+            fetchTechNews(document.getElementById('search-input').value.trim());
+        });
+
+        // Initial fetch when the page loads
+        fetchTechNews();
+
 
     </script>
 
