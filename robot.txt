@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /private/
+
+# Host
+Host: https://www.techguru.in.net/
+
+# Sitemaps
+Sitemap: https://www.techguru.in.net/sitemap.xml
